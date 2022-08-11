@@ -1,7 +1,0 @@
-{
-  "files.associations": {
-    "*.html.erb": "erb",
-    "iosfwd": "cpp",
-    "ostream": "cpp"
-  }
-}
