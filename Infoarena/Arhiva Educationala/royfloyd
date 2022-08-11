@@ -1,0 +1,71 @@
+mirceamaierean41
+        Mircea Maierean
+• mirceamaierean41
+            logout |
+    contul meu
+            infoarena informatica de performanta
+                infoarena
+                    blog
+                        forum
+                            calendar
+                                profilul meu
+                                    mesaje
+                                        Home
+                                            Arhiva de probleme
+                                                Arhiva educatională
+                                                    Arhiva monthly
+                                                        Arhiva ACM
+                                                            Concursuri
+                                                                Concursuri virtuale
+                                                                    Clasament
+                                                                        Articole
+                                                                            Downloads
+                                                                                Links
+                                                                                    Documentaţie
+                                                                                        Despre infoarena
+                                                                                            Monitorul de evaluare
+                                                                                                Trimite soluţii
+                                                                                                    Contul meu !Cautare
+
+                                                                                                        In curand... 151608 membri inregistrati
+
+        20 : 19 : 10 Fii un bun infoarenaut !Implică -
+        te !
+
+        Pagini recente » Monitorul de evaluare |
+    Cod sursa(job #2642962) | Floyd - Warshall / Roy - Floyd | Monitorul de evaluare | Cod sursa(job #2449259)
+
+                                                                                               Cod sursa(job #2449259) Utilizator mirceamaierean41Mircea Maierean mirceamaierean41 Data 19 august 2019 01 : 19 : 49 Problema Floyd -
+                                                                                           Warshall / Roy - Floyd Scor 100 Compilator cpp - 64 Status done Runda Arhiva educationala Marime 0.67 kb Raporteaza aceasta sursa
+#include <fstream>
+                                                                                           using namespace std;
+int a[101][101];
+int n;
+void RoyFloyd()
+{
+    for (int k = 1; k <= n; ++k)
+        for (int i = 1; i <= n; ++i)
+            for (int j = 1; j <= n; ++j)
+                if (a[i][k] && a[k][j] && (a[i][j] > a[i][k] + a[k][j] || !a[i][j]) && i != j)
+                    a[i][j] = a[i][k] + a[k][j];
+}
+ifstream cin("royfloyd.in");
+ofstream cout("royfloyd.out");
+int main()
+{
+    ios_base::sync_with_stdio(0);
+    cin.tie(NULL);
+    cin >> n;
+    for (int i = 1; i <= n; ++i)
+        for (int j = 1; j <= n; ++j)
+            cin >> a[i][j];
+    RoyFloyd();
+    for (int i = 1; i <= n; ++i)
+    {
+        for (int j = 1; j <= n; ++j)
+            cout << a[i][j] << " ";
+        cout << "\n";
+    }
+    return 0;
+}
+© 2004 - 2022 Asociatia infoarenaPrima paginaDespre infoarenaTermeni si conditiiContactSari la inceputul paginii ↑ Creative Commons LicenseCu exceptia cazurilor in care se specifica altfel, continutul site - ului infoarena este publicat sub licenta Creative Commons Attribution - NonCommercial 2.5.
