@@ -15,8 +15,10 @@ int dx[] = {-1, 1, 0, 0};
 int dy[] = {0, 0, 1, -1};
 int n, m, cnt, t, cur;
 bool ok;
+
 char a[NMAX][NMAX];
 int fil[NMAX][NMAX];
+
 bool valabil(int x, int y)
 {
   if (x && y && x <= n && y <= m && a[x][y] != '#' && fil[x][y] == 0)
