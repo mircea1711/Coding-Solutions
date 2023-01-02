@@ -1,6 +1,6 @@
 int prel(int p, int n)
 {
-    while(n)
+    while (n)
     {
         p *= 10;
         n /= 10;

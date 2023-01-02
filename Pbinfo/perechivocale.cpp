@@ -4,7 +4,7 @@ using namespace std;
 
 bool vocala(char a)
 {
-	return a == 'a' || a == 'e' || a == 'u' || a == 'i' || a == 'o';
+    return a == 'a' || a == 'e' || a == 'u' || a == 'i' || a == 'o';
 }
 
 int main()

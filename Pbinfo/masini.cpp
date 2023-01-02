@@ -7,21 +7,20 @@ ofstream cout("masini.out");
 vector<int> v;
 int main()
 {
-    int n,a,sum=0,k;
-    cin>>n>>k;
-    for(int i=1; i<=n; ++i)
+    int n, a, sum = 0, k;
+    cin >> n >> k;
+    for (int i = 1; i <= n; ++i)
     {
-        cin>>a;
+        cin >> a;
         v.push_back(a);
     }
-    sort(v.begin(),v.end());
-    int i=0;
+    sort(v.begin(), v.end());
+    int i = 0;
     do
     {
-        sum+=v[i];
+        sum += v[i];
         ++i;
-    }
-    while(sum<=k);
-    cout<<i-1;
+    } while (sum <= k);
+    cout << i - 1;
     return 0;
 }

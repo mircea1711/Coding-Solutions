@@ -10,7 +10,7 @@ int main()
     while (n != 0)
     {
         if ((n & 1) == 0)
-        	suma += n;
+            suma += n;
         cin >> n;
     }
     cout << suma;

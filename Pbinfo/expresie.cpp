@@ -12,6 +12,6 @@ int main()
         ant *= i;
         suma += ant;
     }
-    cout << "Rezultatul este "<< suma << '\n';
+    cout << "Rezultatul este " << suma << '\n';
     return 0;
 }

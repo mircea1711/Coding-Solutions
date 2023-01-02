@@ -5,13 +5,13 @@ ifstream cin("n_suma.in");
 ofstream cout("n_suma.out");
 int main()
 {
-    int n,suma=0,a;
-    cin>>n;
-    for(int i=1;i<=n;++i)
+    int n, suma = 0, a;
+    cin >> n;
+    for (int i = 1; i <= n; ++i)
     {
-        cin>>a;
-        suma+=a;
+        cin >> a;
+        suma += a;
     }
-    cout<<suma;
+    cout << suma;
     return 0;
 }
