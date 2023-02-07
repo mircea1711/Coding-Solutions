@@ -1,0 +1,5 @@
+a = input()
+b = input()
+c = input()
+print("NUMBER = " + a)
+print("SALARY = U$ " + str.format("{0:.2f}", float(c) * int(b)))
